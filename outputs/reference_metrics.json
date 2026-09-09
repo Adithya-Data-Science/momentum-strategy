@@ -1,0 +1,11 @@
+{
+  "status": "historical_reference",
+  "period": "2006-2022",
+  "universe": ["AAPL", "MSFT", "AMZN", "GOOGL", "META", "NVDA", "NFLX"],
+  "strategy_net_cagr": 0.225,
+  "strategy_sharpe": 0.93,
+  "equal_weight_cagr": 0.172,
+  "equal_weight_sharpe": 0.88,
+  "cost_bps": 10,
+  "interpretation": "Narrow technology-universe result; not evidence of general or production-ready alpha."
+}
