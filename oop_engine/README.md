@@ -13,7 +13,7 @@ A testable quantitative research application demonstrating object-oriented Pytho
 ```bash
 python -m venv .venv
 pip install -r oop_engine/requirements.txt
-python -m oop_engine.run_demo
+python -m oop_engine.demo
 pytest -q oop_engine/tests
 ```
 
@@ -24,7 +24,14 @@ pytest -q oop_engine/tests
 4. Apply yesterday's holdings to today's returns to avoid look-ahead.
 5. Measure turnover and deduct transaction costs.
 6. Compute risk and performance metrics.
-7. Save reproducible output metrics and verify behavior with pytest.
+7. Compare the demo output with `reference_metrics.json` and verify behavior with pytest.
 8. Swap in another strategy class without changing the backtest/risk engine.
+
+## Repository map
+- `core.py` - validated data object, strategy abstraction, momentum strategy, backtest engine and risk engine
+- `demo.py` - end-to-end reproducible run
+- `tests/test_core.py` - unit tests for reproducibility, portfolio constraints, costs and risk
+- `reference_metrics.json` - stored reference output
+- `requirements.txt` - dependencies
 
 The demo uses deterministic synthetic data so it can be reproduced without credentials. It is an engineering demonstration, not evidence of live alpha.
